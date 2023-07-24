@@ -1,0 +1,335 @@
+/* CSS of order starts from here */
+/* 
+.bg-image{
+    margin: 0;
+    padding: 0;
+    background: url(images/fishrice.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif; 
+
+}*/
+.food-search{
+    background-image: url(../images/fishrice.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: center;
+  
+    padding:6% ;
+  }
+
+   
+  
+.login-box
+{
+    width: 320px;
+    height: 680px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 35%;
+    left: 60%; 
+     position: absolute;
+    transform: translate(-50% -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    max-width: 430px; 
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+}
+
+.order-here
+{
+    width: 320px;
+    height: 490px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 35%;
+    left: 30%;
+    position: absolute;
+    transform: translate(-50% -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+
+.container1
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    
+}
+
+
+.food-selected
+{
+  width: 100%;
+}
+.error
+{
+    color: red;
+    padding: 2%;
+}
+.success
+{
+    color: green;
+    padding: 2%;
+}
+
+h1{
+    margin:0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.login-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.login-box input
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login-box  input[type="tel"],  input[type="email"], 
+input[type="text"],  input[type="number"]
+{
+   border: none; 
+   border-bottom: 1px solid #fff;
+   background: transparent ;
+   outline: none;
+   height: 40px;
+   color: #fff;
+   font-size: 16px;
+  
+}
+.container input[type='search']
+{
+    border: none; 
+    border: 1.5px solid #fff;
+    background: transparent ;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 20px;
+}
+  input[type="tel"],  input[type="email"], 
+input[type="text"],  input[type="number"]
+{
+   border: none; 
+   border: 1px solid #fff;
+   background: transparent ;
+   outline: none;
+   height: 40px;
+   color: #fff;
+   font-size: 16px;
+   width: 100%;
+   border-radius: 6px;
+  
+}
+
+#textarea 
+{
+    border: none;
+    outline: none;
+    color: #fff;
+    background: transparent ;
+    border: 1px solid #fff;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding-top: 4px;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    
+
+    
+
+}
+.login-box input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff; 
+    font-size: 18px;
+    border-radius: 20px;
+}
+.login-box input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+
+        
+
+
+.bg-img{
+     background: url(../images/fishrice.jpg) no-repeat fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+/* CSS of order ends from here */
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Poppins:ital,wght@1,600&display=swap');
+
+
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+.session{
+    height: 210vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: url(../images/fishrice.jpg) no-repeat fixed;
+    background-position: center;
+    background-size: cover;
+    filter: blur(-10px);
+}
+.form{
+    max-width: 430px; 
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+
+
+    /* background:#fff ; */
+    
+}
+header{
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+
+}
+form{
+    margin-top: 30px;
+
+}
+form .bidpicture
+{
+    position: relative;
+    height: 200px;
+    width: 50%;
+    margin-top: 20px;
+}
+
+
+form .fieldpicture
+{
+    position: relative;
+    height: 200px;
+    width: 50%;
+    margin-top: 20px;
+}
+form .field
+{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+.field input,
+.field button {
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.field input
+{   
+    padding: 0px 15px;
+    border: 1px solid #cacaca;
+}
+#textarea
+{
+    border: none;
+    outline: none;
+    color: #fff;
+    background: transparent ;
+    border: 1px solid #fff;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding-top: 4px;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+}
+.eye-icon
+{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.form-link{
+    text-align: center;
+    margin-top: 10px;
+}
+.form-link span,
+.form-link span a
+{
+    font-size: 14px;
+    font-weight: 400;
+    color: #232836;
+}
+.form a
+{
+    color: #0171d3;
+    text-decoration: none;
+}
+.form a:hover
+{
+    text-decoration: underline;
+}
+
+.session input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff; 
+    font-size: 18px;
+    border-radius: 20px;
+    width: 100%;
+}
+.session input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+
+

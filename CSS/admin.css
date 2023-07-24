@@ -1,0 +1,379 @@
+/* 
+author : Kaziibwe Alfred
+food order website Admin
+version 1.0
+*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+    /* border: 1px solid black ; */
+     padding: 1%; /* add spacing around the element */
+     width: 80%;
+     margin: 0 auto;
+}
+.text-center{
+    text-align: center;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+
+    
+ 
+ th{
+   height:50px;
+   color: darkblue;
+   font-size: 20px;
+  }
+  td{
+    text-align:center;
+    color: darkmagenta;
+   
+  }
+
+ 
+  .table-full{
+    width: 100%;
+
+}
+
+
+
+ 
+.table-30{
+    width: 30%;
+}
+.table-full tr th{
+    border-bottom: 1px solid ;
+    padding: 1%;
+    text-align: left;
+}
+.table-full tr td{
+    padding: 1%;
+
+}
+/*  css button primary starts here */
+.btn-primary{
+    background-color: #1e90ff ;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-primary:hover{
+    background-color:#3742fa;
+}
+/*  css button primary ENDs here */
+
+
+/*  css button secondary starts here */
+.btn-secondary{
+    background-color:#7bed9f ;
+    padding: 1%;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-secondary:hover{
+    background-color:#2ed573;
+}
+/*  css button secondary ENDs here */
+
+
+/*  css button danger starts here */
+
+.btn-danger{
+    background-color:#ff6b81;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-danger:hover{
+    background-color:#ff4757;
+}
+.success{
+  color:#7fff00 ;  
+}
+.error{
+    color:#ff4757 ;
+}
+/*  css button danger ends here */
+
+
+
+/* css for menu starts */
+/* .menu{ 
+    text-align: center;  lets us the above text-center
+}*/
+.menu{
+    border-bottom: 1px solid grey;
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu ul li{
+    display: inline;
+    padding:1% ;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color:#ff6b81 ;
+}
+
+.menu ul li a:hover{
+    color: #ff4757;
+}
+/* css for menu ends */
+
+
+
+/*  css for menu-content starts*/
+.main-content{
+    background-color:#f1f2f6 ;
+    padding: 3% 0;
+}
+   .col-4{
+    width: 18%;
+    background-color: white;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+
+
+   }
+
+/*  css for menu-content ends*/
+
+/* css for footer starts*/
+.footer{
+    background-color: #ff4757;
+    color: white;
+}
+/* css for footer ends*/
+
+/* css for login */
+.login{
+  border: 1px solid grey;
+  width: 20%; 
+  margin: 10% auto;   /* bring the login system to the center  */
+  padding:2% ;
+
+}
+
+
+div .move-image1
+{
+    
+
+/* Moves a box to the right and back, while changing
+   colours from red to yellow, in an infinite loop */
+   
+/* 
+	Also shows browser-specific animation specification alternatives
+*/
+
+
+
+width:100px;
+height:100px;
+background:red;
+position:relative;
+animation :mymove 15s infinite;
+-moz-animation:mymove 15s infinite; /*Firefox*/
+-webkit-animation:mymove 15s infinite; /*Safari and Chrome*/
+-o-animation:mymove 15s infinite; /*Opera*/
+}
+
+@keyframes mymove
+{
+ from {left:-290px;}
+ 50% {left:120%;background:yellow;}
+ to {left:-290px;background:red;}}
+
+@-moz-keyframes mymove /*Firefox*/
+{
+ from {left:-290px;}
+ 50% {left:120%;background:yellow;}
+ to {left:-290px;background:red;}}
+
+@-webkit-keyframes mymove /*Safari and Chrome*/
+{
+ from {left:-290px;}
+ 50% {left:120%;background:yellow;}
+ to {left:-290px;background:red;}}
+
+@-o-keyframes mymove /*Opera*/
+{
+ from {left:-290px;}
+ 50% {left:120%;background:yellow;}
+ to {left:-290px;background:red;}
+}
+
+
+
+
+.move-image2
+{
+    
+
+/* multiple keyframes selectors with multiple css styles */
+
+/* 
+	This example also shows the use of browser-specific @keyframes selectors
+*/
+
+
+
+  width:50px;
+  height:50px;
+  background:red;
+  position:relative;
+  animation:mymove 15s infinite;
+  -moz-animation:mymove 15s infinite; /* Firefox */
+  -webkit-animation:mymove 15s infinite; /* Safari and Chrome */
+  -o-animation:mymove 15s infinite; /* Opera */
+}
+
+@keyframes mymove
+{
+  0%   {top:0px; left:0px; background:red;}
+  25%  {top:0px; left:100%; background:blue;}
+  50%  {top:88%; left:100%; background:yellow;}
+  75%  {top:88%; left:-10%; background:green;}
+  100% {top:0px; left:-10%; background:red;}
+}
+
+/* Firefox */
+@-moz-keyframes mymove
+{
+  0%   {top:0px; left:0px; background:red;}
+  25%  {top:0px; left:100px; background:blue;}
+  50%  {top:100px; left:100px; background:yellow;}
+  75%  {top:100px; left:0px; background:green;}
+  100% {top:0px; left:0px; background:red;}
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes mymove
+{
+  0%   {top:0px; left:0px; background:red;}
+  25%  {top:0px; left:100px; background:blue;}
+  50%  {top:100px; left:100px; background:yellow;}
+  75%  {top:100px; left:0px; background:green;}
+  100% {top:0px; left:0px; background:red;}
+}
+
+/* Opera */
+@-o-keyframes mymove
+{
+  0%   {top:0px; left:0px; background:red;}
+  25%  {top:0px; left:100px; background:blue;}
+  50%  {top:100px; left:100px; background:yellow;}
+  75%  {top:100px; left:0px; background:green;}
+  100% {top:0px; left:0px; background:red;}
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Poppins:ital,wght@1,600&display=swap');
+
+
+*{  
+   
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4070f4;
+}
+
+.form{
+    max-width: 430px; 
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    background:#fff ;
+    
+}
+header{
+    font-size: 28px;
+    font-weight: 600;
+    color: #232836;
+    text-align: center;
+
+}
+form{
+    margin-top: 30px;
+
+}
+
+form .field
+{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+.field input,
+.field button {
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.field input
+{   
+    padding: 0px 15px;
+    border: 1px solid #cacaca;
+}
+.eye-icon
+{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.form-link{
+    text-align: center;
+    margin-top: 10px;
+}
+.form-link span,
+.form-link span a
+{
+    font-size: 14px;
+    font-weight: 400;
+    color: #232836;
+}
+.form a
+{
+    color: #0171d3;
+    text-decoration: none;
+}
+.form a:hover
+{
+    text-decoration: underline;
+}
+

@@ -1,0 +1,674 @@
+
+
+ /* ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+  }
+
+  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #555;
+    color: white;
+  }
+
+*/
+
+* {
+ 
+    list-style: none;
+    text-decoration: none;
+  
+  
+  }
+  .sidebar{
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background:#042331;
+    transition: all .5s ease;
+    
+  
+  
+  }
+  .sidebar header{
+    font-size:22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: #063146;
+    user-select: none;
+  }
+  .sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid black;
+    transition: .4s ;
+  }
+  ul li:hover a{
+    padding-left: 50px;
+  }
+  .sidebar ul a li{
+    margin-right: 16px;
+  
+  }
+  #check{
+    display: none;
+  }
+  label #btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background: #042331;
+    border-radius: 3px;
+  }
+  label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color:white;
+    padding: 6px 12px;
+    transition: all .5s;
+    
+  
+  
+  
+  }
+  label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color:white;
+    padding: 4px 9px;
+    transition: all .5s ease;
+   
+  
+  
+  }
+  #check:checked ~ .sidebar{
+    left: 0;
+  }
+  #check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none ;
+  
+  }
+  #check:checked ~ label #cancel{
+    left: 195px;
+  }
+  #check:checked ~ section{
+    margin-left: 250px ;
+  
+  }
+  
+  /* 
+    Author: KAZIIBWE ALFRED;
+    Theme:Restualt food order;
+    version:1.0;
+  
+  */
+  
+  
+  /*  css for ALL*/
+  *{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .container1{
+    /* border: 1px solid red;*/
+     width: 80%;
+     margin: 0%  auto;          /* important step of seperating containers   0 specing btn containers auto centerise the container  and margin is appied outside the border*/
+     padding: 1%; 
+  }
+  .container{
+   /* border: 1px solid red;*/
+    width: 80%;
+    margin: 0%  auto;          /* important step of seperating containers   0 specing btn containers auto centerise the container  and margin is appied outside the border*/
+    padding: 1%;    /* pushes  elements from the border */
+  
+  
+  }
+  
+  .imgresponse{
+    width: 100%;
+    height: 100%;
+  }
+  .img-curve{
+    border-radius: 10px; 
+  }
+  
+  
+  .text-right{
+    text-align:right ;
+  }
+  .text-center{
+    text-align: center;
+  }
+  .titlez{
+    font-weight: 900;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+  }
+  .title{
+    font-weight: 900;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+  }
+  
+  
+  .text-white{
+    color: white;
+  
+  }
+  
+  .clearfix{
+    clear:both ;  /*stop float  is reserving the space for an element eg apic in the news paper*/
+    float: none;
+    
+  
+  }
+  
+  a {
+    color:#63d99b;
+    text-decoration:none ;
+  } 
+  a:hover {
+   color:  #63d9a6;
+  } 
+  .btn{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  .btn-primary{
+    background-color: #f2c94c;
+    color: #fff;    
+    cursor: pointer;
+  }
+  .btn-primary:hover{
+    background-color: #e5b53a;
+    color: white;
+  
+  
+  }
+  h2{
+    color: #2f3542;
+    font-size: 2rem;
+    margin-bottom:2% ;
+  }
+  h3{
+    font-size: 1.5rem;
+  }
+  
+  .float-container{
+    position: relative; /*its position will be calc from its container */
+          /* u can move the container left towards the center by  left:50 */
+  }
+  .float-text{
+    position:absolute ;  /* drives away text from inside elements to outside the boarders eg in categories my noodle pic filled the all boarders and the title element was driven out if relative combined with absolute */ 
+    bottom: 10px;
+    left: 40%;
+  }
+  
+  
+  /*css for the navbar section */
+  
+  .logo{
+    /*border: 1px solid black;*/
+    width:10%;
+    float: left;
+    border-radius: 50%;
+    
+    
+  }
+  
+  .menu{
+    line-height: 80px;
+  
+  }
+  .menu2
+  {
+    background: #cccccc;
+  
+  }
+  
+  .menu ul{
+    list-style-type: none;  /* eliminates the dotes of the un ordered list */
+  }
+  
+  .menu ul li {
+    display: inline;  /* display elements in the same line */
+    padding: 1px; /*separating  about contact home */ 
+  
+  }
+  
+  .menu ul li a {
+    
+    font-weight: bold;
+  
+  }          /*        for only the under menu    */     
+  
+  
+  /* css for food search section */
+  .food-search{
+    background-image: url(../images/fishrice.jpg) ;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: center;
+  
+    padding:6% ;
+  }
+  
+  .food-search input[type="search"]  {
+    width: 50%;
+    padding:1% ; /* for height */
+    font-size: 1rem; /*size of the input */
+    border: none;
+    border-radius: 5px;
+  }
+  
+  /*css categories */
+  
+  .categories{
+    padding: 4% 0;  /*change in the top bottom the container */
+  }
+  
+  .category-slide{
+    /* border: 1px solid black; */
+    
+     width: 35%;
+     float:left ;     /*elemens should be wounted on it towards left  */
+     margin: 2%; /* separated boxes of categories */
+     object-fit: 100%;   
+     
+   }
+  .box-3{
+   /* border: 1px solid black; */
+   
+    width: 28%;
+    float:left ;     /*elemens should be wounted on it towards left  */
+    margin: 2%; /* separated boxes of categories */
+    
+  }
+  
+  
+  
+  /* css for food menu */
+  .food-menu{
+    background-color: #ececec;
+    padding: 4% 0;
+  
+  
+  
+    
+  }
+  
+  
+  
+  .food-menu-box{
+   /* border: 1px solid black; */
+   width: 43%;
+   margin: 1%;
+   padding: 2%;
+   float:left;
+   background-color: white;
+   border-radius: 15px;
+   
+  }
+  
+  
+  .food-menu-img{   
+    width: 40%;
+    float: left;
+    
+   
+  } 
+  
+  .food-menu-desc{
+    width: 20%;
+    float:left ;
+    margin-left:8% ; 
+  }  
+  
+  .food-price{
+    font-size: 1.2rem;
+    margin: 2% 0; 
+  }
+  .food-detail{
+    font-size: 1rem;
+    color: #747d8c;
+  }
+  .footer{background: #cccccc;}
+  .social ul{
+    list-style-type: none;
+  }
+  .social ul li{
+    display: inline;
+    padding: 1%;
+  }
+  
+   /* .nav1 {
+    display: inline-flex;
+  }  */
+  
+  #nav2 {
+    display: none;
+  }
+  
+  
+  
+  /* Css for mobile screens eg phones */
+  
+  @media only screen and (max-width:768px){
+    /* to display sidebar infront of category starts */
+    .display1{
+      z-index: 1;
+  
+    }
+    .display2{
+      z-index: 2;
+    /* to display sidebar infront of category starts */
+  
+  
+    }
+    #nav1 {
+      display: none;
+    }
+    #nav2 {
+      display: block;
+    }
+    
+    .logo{
+      width: 60% ;
+      float:none;
+      margin: 2% auto; /*increase length out of the element*/
+    }
+    .menu ul{
+      text-align: center;
+    }
+  
+      .food-search input[type="search"]{
+        width: 90%;
+        margin-bottom:5% ;
+        padding: 2%;
+  
+  }
+  .btn{
+    width:85% ;
+    padding:2% ; /* icreases the size of the button*/
+    
+  }
+  .food-search{
+    padding: 20% 0 ;
+  }
+  .categories{
+    padding: 20% 0 ;
+  }
+  .h2{
+    margin-bottom: 10%;
+  }
+  .box-3{
+    width: 90%;
+    margin: 4% auto;
+  }
+  
+  .food-menu{
+    
+    padding: 10% 0;
+  }
+  .food-menu-box{
+    width: 90%;
+    padding: 5% 0;
+    margin-bottom:5% ;
+  }
+  
+  .food-menu-img{   
+    width: 60%;
+    padding-left: 20%;
+    /* float: left; */
+    
+   
+  } 
+  
+  .food-menu-desc{
+    width: 40%;
+    /* float:left ; */
+    margin-left:8% ;
+    padding-left: 20%;
+  
+    
+   
+  } 
+  
+  .social{
+    padding: 5% 0;
+  }
+  
+  }
+  
+  @media only screen and (max-width:523px){
+    .logo{
+      width: 20% ;
+      float:none;
+      margin: 2% auto; /*increase length out of the element*/
+      border-radius: 50%;
+      border: 1px solid black;
+    }
+    .food-search input[type="search"]  {
+      
+      padding:1% ; /* for height */
+      font-size: 1rem; /*size of the input */
+      border: none;
+      border-radius: 100px;
+      height: 20px;
+    }
+  
+    #check:checked ~ .sidebar{
+      left: 0;
+    }
+    #check:checked ~ label #btn{
+      left: 100px;
+      opacity: 0;
+      pointer-events: none ;
+    
+    }
+    #check:checked ~ label #cancel{
+      left: 195px;
+    }
+    #check:checked ~ section{
+      margin-left: 100px ;
+    
+    }
+  
+    
+  label #btn{
+    left: 10px;
+    top: 190px;
+    font-size: 35px;
+    color:white;
+    padding: 6px 12px;
+    transition: all .5s;
+  
+  
+  }
+  label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color:white;
+    padding: 4px 9px;
+    transition: all .5s ease;
+  
+  }
+  label .size
+  {
+   
+    border-radius: 50px;
+  }
+  
+  .titlez{
+    font-weight: 900;
+   
+    font-size: largeR;
+  }
+  .title{
+    font-weight: 900;
+    font-size: medium;
+  }
+    
+  }
+  
+  
+ 
+	
+  
+  
+/*   
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .section1 {
+    margin-bottom: 40px;
+  }
+  
+  h1, h2 {
+    margin: 0;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input , textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    resize: none;
+  }
+  
+   */
+
+
+
+   
+  
+
+
+
+  
+ 
+  footer {
+    background-color: #3f3f3f;
+    color: #fff;
+    padding: 50px 0;
+    font-size: 16px;
+    font-weight: 300;
+    
+  }
+  
+  footer h5 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .inline {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 2%;
+    padding-right: 7%;
+  }
+  
+  footer p {
+    margin-bottom: 20px;
+
+  }
+  
+  
+  footer ul.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  footer ul.social-icons li:last-child {
+    margin-right: 0;
+  }
+  
+  footer ul.social-icons li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    color: #3f3f3f;
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    -webkit-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+  }
+  
+  footer ul.social-icons li a:hover {
+    background-color: #f3f3f3;
+    color: #3f3f3f;
+  }
+  
+  footer p.credit {
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+  footer p.credit a {
+    color: #fff;
+  }
+  
+  @media (min-width: 768px) {
+    footer {
+      padding: 50px 0;
+      font-size: 18px;
+    }
+    footer h5 {
+      font-size: 20px;
+    }
+    footer ul.social-icons li a {
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      line-height: 40px;
+    }
+    footer p.credit {
+      margin-top: 50px;
+      font-size: 16px;
+    }
+  }
